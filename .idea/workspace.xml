@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6468fdd3-08ed-45c7-8ee7-00f3e2d6fb19" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jqa20yjtCeqLyXCIrE0RLfYLi7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6468fdd3-08ed-45c7-8ee7-00f3e2d6fb19" name="Default Changelist" comment="" />
+      <created>1604533864380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604533864380</updated>
+      <workItem from="1604533865470" duration="7195000" />
+      <workItem from="1604796882204" duration="9706000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3281" y="605" key="SettingsEditor" timestamp="1604557857154">
+      <screen x="3240" y="0" width="1080" height="1920" />
+    </state>
+    <state x="3281" y="605" key="SettingsEditor/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1604557857154" />
+    <state x="3443" y="445" width="672" height="678" key="search.everywhere.popup" timestamp="1604557853825">
+      <screen x="3240" y="0" width="1080" height="1920" />
+    </state>
+    <state x="3443" y="445" width="672" height="678" key="search.everywhere.popup/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1604557853825" />
+  </component>
+</project>
