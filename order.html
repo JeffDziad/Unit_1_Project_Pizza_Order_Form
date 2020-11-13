@@ -13,40 +13,70 @@
     </nav>
 </header>
 <br><br><br><br><br><br>
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
+<div class="codepen-container">
+    <div id="icetab-container">
+        <div class="icetab current-tab">Pizza Options</div><div class="icetab">Delivery Info</div><div class="icetab">Confirm Order</div>
+    </div>
 
-<div id="London" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-</div>
+    <div id="icetab-content">
+        <div class="tabcontent tab-active">
+            <div id="pizzaMaker">
+                <img src="media/createPizza/plain_Pizza.png">
+                <div id="pizzaMakerCustomize">
+                    <h1 class="pizzaMakerTitles">Pizza Customizer</h1>
+                    <div class="tabPizzaLabel rounded" id="pizzaSizeLabel">Pizza Size</div>
+                    <div class="tabPizzaContent" id="pizzaSizeContent">
+                        <label for="pizzaSmall"><input type="radio" name="pizzaSize" id="pizzaSmall">Small ($7)</label>
+                        <label for="pizzaMedium"><input type="radio" name="pizzaSize" id="pizzaMedium">Medium ($9)</label>
+                        <label for="pizzaLarge"><input type="radio" name="pizzaSize" id="pizzaLarge">Large ($12)</label>
+                    </div>
+                    <br>
+                    <div class="tabPizzaLabel rounded" id="pizzaCrustLabel">Pizza Crust</div>
+                    <div class="tabPizzaContent" id="pizzaCrustContent">
+                        <label for="pizzaThin"><input type="radio" name="pizzaCrust" id="pizzaThin">Thin</label>
+                        <label for="pizzaPan"><input type="radio" name="pizzaCrust" id="pizzaPan">Pan</label>
+                        <label for="pizzaGluten"><input type="radio" name="pizzaCrust" id="pizzaGluten">Gluten Free</label>
+                    </div>
+                    <br>
+                    <div class="tabPizzaLabel rounded" id="pizzaMeatLabel">Meat Toppings</div>
+                    <div class="tabPizzaContent" id="pizzaMeatContent">
+                        <label for="pepperoni"><input type="radio" name="pizzaMeats" id="pepperoni">Pepperoni</label>
+                        <br>
+                        <label for="sausage"><input type="radio" name="pizzaMeats" id="sausage">Sausage</label>
+                        <br>
+                        <label for="chicken"><input type="radio" name="pizzaMeats" id="chicken">Grilled Chicken</label>
+                        <br>
+                        <label for="salami"><input type="radio" name="pizzaMeats" id="salami">Salami</label>
+                    </div>
+                    <br>
+                    <div class="tabPizzaLabel rounded" id="pizzaVeggieLabel">Veggie Toppings</div>
+                    <div class="tabPizzaContent" id="pizzaVeggieContent">
+                        Blah Blah Blah
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabcontent">Tab2 <br>2 lorim ipsum</div>
+        <div class="tabcontent">Tab3 <br>23 lorim ipsum</div>
+    </div>
+    <script>
+        var tabs = document.getElementById('icetab-container').children;
+        var tabcontents = document.getElementById('icetab-content').children;
 
-<div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-</div>
-<script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+        var myFunction = function() {
+            var tabchange = this.mynum;
+            for(var int=0;int<tabcontents.length;int++){
+                tabcontents[int].className = ' tabcontent';
+                tabs[int].className = ' icetab';
+            }
+            tabcontents[tabchange].classList.add('tab-active');
+            this.classList.add('current-tab');
         }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+        for(var index=0;index<tabs.length;index++){
+            tabs[index].mynum=index;
+            tabs[index].addEventListener('click', myFunction, false);
         }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
 </script>
 <div class="footer">
 </div>

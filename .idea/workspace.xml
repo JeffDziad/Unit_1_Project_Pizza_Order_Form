@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6468fdd3-08ed-45c7-8ee7-00f3e2d6fb19" name="Default Changelist" comment="" />
+    <list default="true" id="6468fdd3-08ed-45c7-8ee7-00f3e2d6fb19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +39,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jqa20yjtCeqLyXCIrE0RLfYLi7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,14 +64,37 @@
       <option name="presentableId" value="Default" />
       <updated>1604533864380</updated>
       <workItem from="1604533865470" duration="7195000" />
-      <workItem from="1604796882204" duration="9706000" />
+      <workItem from="1604796882204" duration="13240000" />
+      <workItem from="1604907894952" duration="3255000" />
+      <workItem from="1605085084804" duration="6996000" />
+      <workItem from="1605239309920" duration="11313000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="629" y="438" key="Github.ShareDialog" timestamp="1604900785580">
+      <screen x="0" y="0" width="1620" height="1080" />
+    </state>
+    <state x="629" y="438" key="Github.ShareDialog/0.0.1620.1080/3240.0.1080.1920@0.0.1620.1080" timestamp="1604900785580" />
+    <state x="561" y="245" key="Github.UntrackedFilesDialog" timestamp="1604900803934">
+      <screen x="0" y="0" width="1620" height="1080" />
+    </state>
+    <state x="561" y="245" key="Github.UntrackedFilesDialog/0.0.1620.1080/3240.0.1080.1920@0.0.1620.1080" timestamp="1604900803934" />
     <state x="3281" y="605" key="SettingsEditor" timestamp="1604557857154">
       <screen x="3240" y="0" width="1080" height="1920" />
     </state>
