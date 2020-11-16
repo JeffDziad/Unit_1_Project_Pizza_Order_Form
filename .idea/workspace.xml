@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6468fdd3-08ed-45c7-8ee7-00f3e2d6fb19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Unit_1_Project_Pizza_Order_Form.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Unit_1_Project_Pizza_Order_Form.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
@@ -67,8 +70,17 @@
       <workItem from="1604796882204" duration="13240000" />
       <workItem from="1604907894952" duration="3255000" />
       <workItem from="1605085084804" duration="6996000" />
-      <workItem from="1605239309920" duration="11313000" />
+      <workItem from="1605239309920" duration="13306000" />
+      <workItem from="1605484018203" duration="11705000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Pizza Customizer and its dynamic tabs. Finished Size, Crust, and Meat Toppings Options.">
+      <created>1605253140649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605253140649</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +98,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Pizza Customizer and its dynamic tabs. Finished Size, Crust, and Meat Toppings Options." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Pizza Customizer and its dynamic tabs. Finished Size, Crust, and Meat Toppings Options." />
+  </component>
   <component name="WindowStateProjectService">
     <state x="629" y="438" key="Github.ShareDialog" timestamp="1604900785580">
       <screen x="0" y="0" width="1620" height="1080" />
@@ -95,13 +111,17 @@
       <screen x="0" y="0" width="1620" height="1080" />
     </state>
     <state x="561" y="245" key="Github.UntrackedFilesDialog/0.0.1620.1080/3240.0.1080.1920@0.0.1620.1080" timestamp="1604900803934" />
-    <state x="3281" y="605" key="SettingsEditor" timestamp="1604557857154">
+    <state x="3281" y="605" key="SettingsEditor" timestamp="1605497361286">
       <screen x="3240" y="0" width="1080" height="1920" />
     </state>
-    <state x="3281" y="605" key="SettingsEditor/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1604557857154" />
-    <state x="3443" y="445" width="672" height="678" key="search.everywhere.popup" timestamp="1604557853825">
+    <state x="3281" y="605" key="SettingsEditor/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1605497361286" />
+    <state x="3372" y="693" key="Vcs.Push.Dialog.v2" timestamp="1605253144295">
       <screen x="3240" y="0" width="1080" height="1920" />
     </state>
-    <state x="3443" y="445" width="672" height="678" key="search.everywhere.popup/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1604557853825" />
+    <state x="3372" y="693" key="Vcs.Push.Dialog.v2/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1605253144295" />
+    <state x="3443" y="445" width="672" height="678" key="search.everywhere.popup" timestamp="1605497357829">
+      <screen x="3240" y="0" width="1080" height="1920" />
+    </state>
+    <state x="3443" y="445" width="672" height="678" key="search.everywhere.popup/0.0.1620.1080/3240.0.1080.1920@3240.0.1080.1920" timestamp="1605497357829" />
   </component>
 </project>

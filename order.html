@@ -15,49 +15,93 @@
 <br><br><br><br><br><br>
 <div class="codepen-container">
     <div id="icetab-container">
-        <div class="icetab current-tab">Pizza Options</div><div class="icetab">Delivery Info</div><div class="icetab">Confirm Order</div>
+        <div class="icetab current-tab">Pizza Options</div><div class="icetab">Delivery Info</div><div class="icetab" id="confirmOrderTab">Confirm Order</div>
     </div>
 
     <div id="icetab-content">
-        <div class="tabcontent tab-active">
+        <div class="tabcontent tab-active" id="pizzaOptionTab">
             <div id="pizzaMaker">
                 <img src="media/createPizza/plain_Pizza.png">
+                <img src="media/createPizza/scatterPepperoni.png" class="scatterToppings" id="scatterPepperoni">
+                <img src="media/createPizza/scatterSausage.png" class="scatterToppings" id="scatterSausage">
+                <img src="media/createPizza/scatterGrilledChicken.png" class="scatterToppings" id="scatterChicken">
+                <img src="media/createPizza/scatterSalami.png" class="scatterToppings" id="scatterSalami">
+                <img src="media/createPizza/scatterOnion.png" class="scatterToppings" id="scatterOnion">
+                <img src="media/createPizza/scatterMushroom.png" class="scatterToppings" id="scatterMushroom">
+                <img src="media/createPizza/scatterOlive.png" class="scatterToppings" id="scatterOlive">
                 <div id="pizzaMakerCustomize">
                     <h1 class="pizzaMakerTitles">Pizza Customizer</h1>
                     <div class="tabPizzaLabel rounded" id="pizzaSizeLabel">Pizza Size</div>
                     <div class="tabPizzaContent" id="pizzaSizeContent">
-                        <label for="pizzaSmall"><input type="radio" name="pizzaSize" id="pizzaSmall">Small ($7)</label>
-                        <label for="pizzaMedium"><input type="radio" name="pizzaSize" id="pizzaMedium">Medium ($9)</label>
-                        <label for="pizzaLarge"><input type="radio" name="pizzaSize" id="pizzaLarge">Large ($12)</label>
+                        <label for="pizzaSmall"><input type="radio" name="pizzaSize" id="pizzaSmall" class="pizzaSize" value="Small">Small ($7)</label>
+                        <label for="pizzaMedium"><input type="radio" name="pizzaSize" id="pizzaMedium" class="pizzaSize" value="Medium" checked="checked">Medium ($9)</label>
+                        <label for="pizzaLarge"><input type="radio" name="pizzaSize" id="pizzaLarge" class="pizzaSize" value="Large">Large ($12)</label>
                     </div>
                     <br>
                     <div class="tabPizzaLabel rounded" id="pizzaCrustLabel">Pizza Crust</div>
                     <div class="tabPizzaContent" id="pizzaCrustContent">
-                        <label for="pizzaThin"><input type="radio" name="pizzaCrust" id="pizzaThin">Thin</label>
-                        <label for="pizzaPan"><input type="radio" name="pizzaCrust" id="pizzaPan">Pan</label>
-                        <label for="pizzaGluten"><input type="radio" name="pizzaCrust" id="pizzaGluten">Gluten Free</label>
+                        <label for="pizzaThin"><input type="radio" name="pizzaCrust" id="pizzaThin" class="pizzaCrust" value="Thin" checked="checked">Thin</label>
+                        <label for="pizzaPan"><input type="radio" name="pizzaCrust" id="pizzaPan" class="pizzaCrust" value="Pan">Pan</label>
+                        <label for="pizzaGluten"><input type="radio" name="pizzaCrust" id="pizzaGluten" class="pizzaCrust" value="Gluten Free">Gluten Free</label>
                     </div>
                     <br>
-                    <div class="tabPizzaLabel rounded" id="pizzaMeatLabel">Meat Toppings</div>
+                    <div class="tabPizzaLabel rounded" id="pizzaMeatLabel">Meat Toppings ($1.50/each)</div>
                     <div class="tabPizzaContent" id="pizzaMeatContent">
-                        <label for="pepperoni"><input type="radio" name="pizzaMeats" id="pepperoni">Pepperoni</label>
+                        <label for="pepperoni"><input type="checkbox" value="Pepperoni" name="meats" id="pepperoni" class="pizzaToppingsMeat" onchange="toggleImg('scatterPepperoni')">Pepperoni</label>
                         <br>
-                        <label for="sausage"><input type="radio" name="pizzaMeats" id="sausage">Sausage</label>
+                        <label for="sausage"><input type="checkbox" value="Sausage" name="meats" id="sausage" class="pizzaToppingsMeat" onchange="toggleImg('scatterSausage')">Sausage</label>
                         <br>
-                        <label for="chicken"><input type="radio" name="pizzaMeats" id="chicken">Grilled Chicken</label>
+                        <label for="chicken"><input type="checkbox" value="Chicken" name="meats" id="chicken" class="pizzaToppingsMeat" onchange="toggleImg('scatterChicken')">Grilled Chicken</label>
                         <br>
-                        <label for="salami"><input type="radio" name="pizzaMeats" id="salami">Salami</label>
+                        <label for="salami"><input type="checkbox" value="Salami" name="meats" id="salami" class="pizzaToppingsMeat" onchange="toggleImg('scatterSalami')">Salami</label>
                     </div>
                     <br>
-                    <div class="tabPizzaLabel rounded" id="pizzaVeggieLabel">Veggie Toppings</div>
+                    <div class="tabPizzaLabel rounded" id="pizzaVeggieLabel">Veggie Toppings ($1.00/each)</div>
                     <div class="tabPizzaContent" id="pizzaVeggieContent">
-                        Blah Blah Blah
+                        <label for="onions"><input type="checkbox" value="Onions" name="veggies" id="onions" class="pizzaToppingsVeggie" onchange="toggleImg('scatterOnion')">Onions</label>
+                        <label for="mushrooms"><input type="checkbox" value="Mushrooms" name="veggies" id="mushrooms" class="pizzaToppingsVeggie" onchange="toggleImg('scatterMushroom')">Mushrooms</label>
+                        <label for="olives"><input type="checkbox" value="Olives" name="veggies" id="olives" class="pizzaToppingsVeggie" onchange="toggleImg('scatterOlive')">Olives</label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="tabcontent">Tab2 <br>2 lorim ipsum</div>
-        <div class="tabcontent">Tab3 <br>23 lorim ipsum</div>
+        <div class="tabcontent">
+            <div id="deliveryInfo">
+                <h1>Delivery Information</h1>
+                <br>
+                <label for="firstName">First Name: </label><input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <br>
+                <br>
+                <label for="lastName">Last Name: </label><input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                <br>
+                <br>
+                <label for="streetAdd">Address: </label><input type="text" id="streetAdd" name="address" placeholder="Address/City/Zip">
+                <br>
+                <br>
+                <label for="phone">Phone Number: </label><input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+
+            </div>
+        </div>
+        <div class="tabcontent">
+            <div id="orderSummaryID">
+                <h1>Customer Info</h1>
+                <textarea id="outputID" cols="50" rows="15" readonly></textarea>
+            </div>
+            <div id="orderSummary">
+                <h1>Order Summary</h1>
+                <textarea id="output" cols="50" rows="15" readonly></textarea>
+                <br>
+                <button id="submitOrder">Submit Order</button>
+            </div>
+        </div>
+    </div>
+    <div id="confirmedModal" class="modal">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <h1 style="text-align: center; color: red; text-shadow: black 5px 5px 15px;">Order Confirmed!</h1>
+            <br>
+            <p style="text-align: center">Thanks for your business! Your order is being made and will be sent out soon. We'll give you a call when we've arrived!</p>
+        </div>
     </div>
     <script>
         var tabs = document.getElementById('icetab-container').children;
@@ -78,12 +122,48 @@
             tabs[index].addEventListener('click', myFunction, false);
         }
 </script>
+<script>
+    function toggleImg(id)
+    {
+        var element = document.getElementById(id);
+        if (element.style.visibility === "visible")
+        {
+            element.style.visibility = "hidden";
+        }
+        else
+        {
+            element.style.visibility = "visible";
+        }
+    }
+</script>
+<script>
+    var modal = document.getElementById("confirmedModal");
+
+    var btn = document.getElementById("submitOrder");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 <div class="footer">
 </div>
 <script
         src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 <script src="code.js"></script>
 </div>
 </body>
